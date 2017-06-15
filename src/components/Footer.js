@@ -4,8 +4,8 @@ export default class Footer extends Component {
   render() {
     return (
       <footer className="app-footer">
-        <a href="http://coreui.io">CoreUI</a> &copy; 2017 creativeLabs.
-        <span className="float-right">Powered by <a href="http://coreui.io">CoreUI</a></span>
+        <a href="https://github.com/openciti/ds6">Dinesafe6</a> &copy; 2017 Eli Tabello.
+        <span className="float-right">Powered by <a href="https://github.com/openciti?tab=repositories">Openciti</a></span>
       </footer>
     )
   }
