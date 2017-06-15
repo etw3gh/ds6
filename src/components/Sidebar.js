@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
 
-class Sidebar extends Component {
+export default class Sidebar extends Component {
 
   handleClick(e) {
-    e.preventDefault();
-    e.target.parentElement.classList.toggle('open');
+    e.preventDefault()
+    e.target.parentElement.classList.toggle('open')
   }
 
   activeRoute(routeName) {
-    return this.props.location.pathname.indexOf(routeName) > -1 ? 'nav-item nav-dropdown open' : 'nav-item nav-dropdown';
+    return this.props.location.pathname.indexOf(routeName) > -1 ? 'nav-item nav-dropdown open' : 'nav-item nav-dropdown'
   }
 
   // secondLevelActive(routeName) {
@@ -31,5 +31,3 @@ class Sidebar extends Component {
     )
   }
 }
-
-export default Sidebar;
