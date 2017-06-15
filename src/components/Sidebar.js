@@ -23,15 +23,33 @@ export default class Sidebar extends Component {
         <nav className="sidebar-nav">
           <ul className="nav">
             <li className={this.activeRoute("/nearby")}>
-              <a className="nav-link nav-dropdown-toggle" href="#" onClick={this.handleClick.bind(this)}><i className="icon-compass"></i>Nearby</a>
+              <a className="nav-link nav-dropdown-toggle" href="#" onClick={this.handleClick.bind(this)}><i className="fa fa-circle-o"></i>Nearby</a>
               <ul className="nav-dropdown-items">
                 <li className="nav-item">
-                  <NavLink to={'/nearby/venues'} className="nav-link" activeClassName="active"><i className="fa fa-circle-o"></i>Venues</NavLink>
+                  <NavLink to={'/nearby/venues'} className="nav-link" activeClassName="active"><i className="fa fa-map-o"></i>Venues</NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink to={'/nearby/pho'} className="nav-link" activeClassName="active"><i className="fa fa-circle-o"></i>Pho</NavLink>
+                  <NavLink to={'/nearby/pho'} className="nav-link" activeClassName="active"><i className="fa fa-map-o"></i>Pho</NavLink>
                 </li>
               </ul>
+            </li>
+
+            <li className={this.activeRoute("/about")}>
+              <a className="nav-link nav-dropdown-toggle" href="#" onClick={this.handleClick.bind(this)}><i className="fa fa-circle-o"></i>About</a>
+              <ul className="nav-dropdown-items">
+                <li className="nav-item">
+                  <NavLink to={'/about/source'} className="nav-link" activeClassName="active"><i className="fa fa-code"></i>Source Code</NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink to={'/about/opendata'} className="nav-link" activeClassName="active"><i className="fa fa-pied-piper"></i>Open Data Licence</NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink to={'/about/licence'} className="nav-link" activeClassName="active"><i className="fa fa-creative-commons"></i>Licence</NavLink>
+                </li>
+              </ul>
+              <li className="nav-item">
+                <NavLink to={'/social/twitter'} className="nav-link" activeClassName="active"><i className="fa fa-twitter"></i>Twitter</NavLink>
+              </li>
             </li>
           </ul>
         </nav>
