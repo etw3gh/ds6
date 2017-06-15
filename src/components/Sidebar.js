@@ -47,10 +47,21 @@ export default class Sidebar extends Component {
                   <NavLink to={'/about/licence'} className="nav-link" activeClassName="active"><i className="fa fa-creative-commons"></i>Licence</NavLink>
                 </li>
               </ul>
-              <li className="nav-item">
-                <NavLink to={'/social/twitter'} className="nav-link" activeClassName="active"><i className="fa fa-twitter"></i>Twitter</NavLink>
-              </li>
             </li>
+
+
+            <li className={this.activeRoute("/social")}>
+              <a className="nav-link nav-dropdown-toggle" href="#" onClick={this.handleClick.bind(this)}><i className="fa fa-circle-o"></i>Social</a>
+              <ul className="nav-dropdown-items">
+                <li className="nav-item">
+                  <NavLink to={'/social/twitter'} className="nav-link" activeClassName="active"><i className="fa fa-twitter"></i>Twitter</NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink to={'/about/instagram'} className="nav-link" activeClassName="active"><i className="fa fa-instagram"></i>Instagram</NavLink>
+                </li>
+              </ul>
+            </li>
+
           </ul>
         </nav>
       </div>
