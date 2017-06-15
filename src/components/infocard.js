@@ -12,7 +12,7 @@ export default class InfoCard extends Component {
           <CardTitle>{P.title}</CardTitle>
           <CardSubtitle>{P.subtitle}</CardSubtitle>
           <CardText>{P.text}</CardText>
-          <a href={P.link}><Button className='primary'>Link</Button></a>
+          <a target='_blank' href={P.link}><Button className='primary'>Link</Button></a>
         </CardBlock>
       </Card>
     )
