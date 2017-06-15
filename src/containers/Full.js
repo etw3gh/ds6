@@ -6,6 +6,7 @@ import Breadcrumb from '../components/Breadcrumb'
 import Aside from '../components/Aside'
 import Footer from '../components/Footer'
 
+import SourceCode from '../views/sourcecode'
 import Dashboard from '../views/Dashboard'
 
 export default class Full extends Component {
@@ -19,6 +20,11 @@ export default class Full extends Component {
             <Breadcrumb />
             <div className="container-fluid">
               <Switch>
+                <Route path="/dashboard" name="Dashboard" component={Dashboard}/>
+                <Route path="/about/source" name="SourceCode" component={SourceCode}/>
+                <Route path="/dashboard" name="Dashboard" component={Dashboard}/>
+                <Route path="/dashboard" name="Dashboard" component={Dashboard}/>
+                <Route path="/dashboard" name="Dashboard" component={Dashboard}/>
                 <Route path="/dashboard" name="Dashboard" component={Dashboard}/>
                 <Redirect from="/" to="/dashboard"/>
               </Switch>
