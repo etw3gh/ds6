@@ -10,7 +10,7 @@ export const routes = {
 
   '/about/source': 'SourceCode',
   '/about/opendata': 'OpenData',
-  '/about/licence': 'Licence',
+  '/about/licences': 'Licences',
   '/social/twitter': 'Twitter',
   '/social/instagram': 'Instagram',
 }

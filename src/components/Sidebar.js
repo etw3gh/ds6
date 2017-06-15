@@ -41,10 +41,7 @@ export default class Sidebar extends Component {
                   <NavLink to={'/about/source'} className="nav-link" activeClassName="active"><i className="fa fa-code"></i>Source Code</NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink to={'/about/opendata'} className="nav-link" activeClassName="active"><i className="fa fa-pied-piper"></i>Open Data Licence</NavLink>
-                </li>
-                <li className="nav-item">
-                  <NavLink to={'/about/licence'} className="nav-link" activeClassName="active"><i className="fa fa-creative-commons"></i>Licence</NavLink>
+                  <NavLink to={'/about/licences'} className="nav-link" activeClassName="active"><i className="fa fa-creative-commons"></i>Licences</NavLink>
                 </li>
               </ul>
             </li>

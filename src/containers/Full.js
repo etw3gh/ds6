@@ -7,6 +7,7 @@ import Aside from '../components/Aside'
 import Footer from '../components/Footer'
 
 import SourceCode from '../views/sourcecode'
+import Licences from '../views/licences'
 import Dashboard from '../views/Dashboard'
 
 export default class Full extends Component {
@@ -22,7 +23,7 @@ export default class Full extends Component {
               <Switch>
                 <Route path="/dashboard" name="Dashboard" component={Dashboard}/>
                 <Route path="/about/source" name="SourceCode" component={SourceCode}/>
-                <Route path="/dashboard" name="Dashboard" component={Dashboard}/>
+                <Route path="/about/licences" name="Licences" component={Licences}/>
                 <Route path="/dashboard" name="Dashboard" component={Dashboard}/>
                 <Route path="/dashboard" name="Dashboard" component={Dashboard}/>
                 <Route path="/dashboard" name="Dashboard" component={Dashboard}/>
