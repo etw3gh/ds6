@@ -53,9 +53,6 @@ export default class Sidebar extends Component {
                 <li className="nav-item">
                   <NavLink to={'/social/twitter'} className="nav-link" activeClassName="active"><i className="fa fa-twitter"></i>Twitter</NavLink>
                 </li>
-                <li className="nav-item">
-                  <NavLink to={'/about/instagram'} className="nav-link" activeClassName="active"><i className="fa fa-instagram"></i>Instagram</NavLink>
-                </li>
               </ul>
             </li>
 
